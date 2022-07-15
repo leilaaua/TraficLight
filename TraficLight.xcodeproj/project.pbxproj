@@ -11,6 +11,7 @@
 		6389E1B42881B082000F8FD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389E1B32881B082000F8FD0 /* ContentView.swift */; };
 		6389E1B62881B085000F8FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6389E1B52881B085000F8FD0 /* Assets.xcassets */; };
 		6389E1B92881B085000F8FD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6389E1B82881B085000F8FD0 /* Preview Assets.xcassets */; };
+		6389E1C02881B0BD000F8FD0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389E1BF2881B0BD000F8FD0 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		6389E1B32881B082000F8FD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6389E1B52881B085000F8FD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6389E1B82881B085000F8FD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6389E1BF2881B0BD000F8FD0 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				6389E1B12881B082000F8FD0 /* TraficLightApp.swift */,
 				6389E1B32881B082000F8FD0 /* ContentView.swift */,
+				6389E1BF2881B0BD000F8FD0 /* CircleView.swift */,
 				6389E1B52881B085000F8FD0 /* Assets.xcassets */,
 				6389E1B72881B085000F8FD0 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6389E1C02881B0BD000F8FD0 /* CircleView.swift in Sources */,
 				6389E1B42881B082000F8FD0 /* ContentView.swift in Sources */,
 				6389E1B22881B082000F8FD0 /* TraficLightApp.swift in Sources */,
 			);
@@ -267,6 +271,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TraficLight/Preview Content\"";
+				DEVELOPMENT_TEAM = JN5BVVZ7X9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,6 +300,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TraficLight/Preview Content\"";
+				DEVELOPMENT_TEAM = JN5BVVZ7X9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

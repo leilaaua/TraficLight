@@ -9,9 +9,38 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        ZStack {
+            Color.black
+                .ignoresSafeArea()
+            VStack(spacing: 20) {
+                CircleView(color: .red)
+                CircleView(color: .green)
+                CircleView(color: .blue)
+                
+                Spacer()
+                
+                Button {
+                    change()
+                } label: {
+                    Text("Start")
+                        .font(.system(size: 30))
+                        .frame(width: 80 , height: 70, alignment: .center)
+                }
+                .buttonStyle(.bordered)
+                .tint(.blue)
+                .font(.subheadline)
+                    
+
+            }
             .padding()
+        }
+        
+        
     }
+}
+
+func change() {
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
