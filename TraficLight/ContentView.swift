@@ -14,31 +14,14 @@ enum CurrentLight {
 struct ContentView: View {
     
     @State private var buttonTitle = "START"
-    
-    @State private var redLightState = 0.3
-    @State private var yellowLightState = 0.3
-    @State private var greenLightState = 0.3
-    
     @State private var currentLight = CurrentLight.red
     
     private func nextColor() {
         
-        let lightIsOn = 1.0
-        let lightIsOff = 0.3
-        
         switch currentLight {
-        case .red:
-            currentLight = .yellow
-            greenLightState = lightIsOff
-            redLightState = lightIsOn
-        case .yellow:
-            currentLight = .green
-            redLightState = lightIsOff
-            yellowLightState = lightIsOn
-        case .green:
-            currentLight = .red
-            greenLightState = lightIsOn
-            yellowLightState = lightIsOff
+        case .red: currentLight = .yellow
+        case .yellow: currentLight = .green
+        case .green: currentLight = .red
         }
         
     }
@@ -51,9 +34,9 @@ struct ContentView: View {
                 .ignoresSafeArea()
             
             VStack(spacing: 20) {
-                CircleView(color: .red, opacity: redLightState)
-                CircleView(color: .yellow, opacity: yellowLightState)
-                CircleView(color: .green, opacity: greenLightState)
+                CircleView(color: .red, opacity: currentLight == .red ? 1 : 0.3)
+                CircleView(color: .yellow, opacity: currentLight == .yellow ? 1 : 0.3)
+                CircleView(color: .green, opacity: currentLight == .green ? 1 : 0.3)
                 
                 Spacer()
                 
